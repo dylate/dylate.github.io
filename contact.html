@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="zxx">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Axoma">
+  <meta name="keywords" content="Axoma">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!--
+  ========================================================================
+  EXCLUSIVE ON themeforest.net
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  Template Name   : Axoma
+  Author          : PXdraft
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  Copyright (c) 2018 - Axoma
+  ========================================================================
+  -->
+  <title>Dylate &raquo; Contact Us</title>
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Plugin CSS -->
+  <link href="static/plugin/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/plugin/font-awesome/css/fontawesome-all.min.css" rel="stylesheet">
+  <link href="static/plugin/et-line/style.css" rel="stylesheet">
+  <link href="static/plugin/themify-icons/themify-icons.css" rel="stylesheet">
+  <link href="static/plugin/owl-carousel/css/owl.carousel.min.css" rel="stylesheet">
+  <link href="static/plugin/magnific/magnific-popup.css" rel="stylesheet">
+  <!-- End -->
+  
+
+  <!-- Theme css -->
+  <link href="static/css/style.css" rel="stylesheet">
+  <link href="static/css/color/default.css" rel="stylesheet" id="color_theme">
+  <!-- End -->
+
+  <!-- Grecaptcha -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+</head>
+
+<!-- ========== Body Starts ========== -->
+<!-- Body Start -->
+<body data-spy="scroll" data-target="#navbar" data-offset="98">
+
+  <!-- Loading -->
+  <div id="loading">
+    <div class="load-circle"><span class="one"></span></div>
+  </div>
+  <!-- / -->
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar header-nav navbar-expand-lg">
+      <div class="container-fluid">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">
+          <img class="light-logo" src="static/img/logos/logo-light.svg" title="" alt="" height="30px">
+          <img class="dark-logo" src="static/img/logos/logo.svg" title="" alt="" height="30px">
+        </a>
+        <!-- / -->
+
+        <!-- Mobile Toggle -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <!-- / -->
+
+        <!-- Top Menu -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbar">
+          <ul class="navbar-nav ml-auto align-items-center">
+            <li><a class="nav-link" href="/">Home</a></li>
+
+            <li><a class="nav-link" href="about.html">About</a></li>
+            <li><a class="nav-link" href="our-work.html">Our Work</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
+            <li><a class="nav-link-btn btn btn-white m-25px-l md-m-0px-l" href="get-started.html">Start</a></li>
+          </ul>
+        </div>
+        <!-- / -->
+
+      </div><!-- Container -->
+    </nav> <!-- Navbar -->
+  </header>
+  <!-- Header End -->
+
+  <!-- Main -->
+  <main>
+
+
+    <!-- 
+    =============================
+      Page Title Section
+    =============================
+    -->
+    <section class="page-title-section theme-after" style="background-image:url(static/img/contact-us-bg.jpg);">
+        <div class="container">
+          <div class="page-title">
+            <h1 class="font-alt">Get In Touch</h1>
+            <ol class="breadcrumb justify-content-center">
+                <li><a href="index.html">Home</a></li>
+                <li class="active">Contact us</li>
+            </ol>
+          </div>
+        </div>
+    </section>
+
+    <!-- 
+    =============================
+      Contact Us
+    =============================
+    -->
+    <section id="contatus" class="section">
+      <div class="container">       
+        <div class="row justify-content-center">
+          <div class="col-lg-8 md-m-30px-b">
+            <div class="contact-form">
+                <h4 class="dark-color font-alt m-30px-b">Say Something</h4>
+                <form class="contactform" method="post" action="static/php/process-form.php">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <input id="name" name="name" type="text" placeholder="Name" class="validate form-control" required>
+                          <span class="input-focus-effect theme-bg"></span>
+                        </div>
+                        </div>
+                        <div class="col-md-6">
+                        <div class="form-group">
+                          <input id="email" type="email" placeholder="Email" name="email" class="validate form-control" required>
+                          <span class="input-focus-effect theme-bg"></span>
+                        </div>
+                        </div>
+                        <div class="col-md-12">
+                        <div class="form-group">
+                          <textarea id="message" placeholder="Your Comment" name="message" class="form-control" required></textarea>
+                          <span class="input-focus-effect theme-bg"></span>
+                        </div>
+                       </div>
+                       <div class="col-md-12">
+                         <div class="form-group">
+                           <div class="g-recaptcha" data-sitekey="6Le4M8AZAAAAAH_eBtbtUzdCfBr2NfkGbK_7Fs2j"></div>
+                         </div>
+                       </div>
+                        <div class="col-md-12">
+                          <div class="send">
+                             <button class="btn btn-theme" type="submit" name="send"> send message</button>
+                          </div>
+                          <span class="output_message"></span>
+                        </div>
+                      </div>
+                </form>
+            </div>
+          </div> <!-- col -->
+          <div class="col-lg-4">
+            <div class="contact-info">
+              <i class="theme-color ti-location-pin"></i>
+              <h6 class="dark-color font-alt">Our Address</h6>
+              <p>12601 N. Cave Creek Rd, Ste 113A, Phoenix, AZ 85022</p>
+            </div>
+            <div class="contact-info">
+              <i class="theme-color ti-mobile"></i>
+              <h6 class="dark-color font-alt">Our Phone</h6>
+              <p>Office: +1 208-918-2941<br/></p>
+            </div>
+            <div class="contact-info">
+                <i class="theme-color ti-email"></i>
+                <h6 class="dark-color font-alt">Our Email</h6>
+                <p>info@dylate.net</p>
+            </div>
+          </div>
+        </div>
+
+        
+      </div> <!-- container -->
+    </section>
+
+  </main>
+  <!-- / -->
+
+  <!-- Footer -->
+  <footer class="footer footer-dark">
+    <section class="footer-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-4 sm-m-15px-tb md-m-30px-b">
+            <h4 class="font-alt">About Us</h4>
+            <p class="footer-text">We create custom software programs such as mobile and web platforms for businesses
+              and individuals with great ideas.</p>
+            <ul class="social-icons">
+              <li><a class="facebook" href="https://www.facebook.com/dylatesoftware"><i
+                    class="fab fa-facebook-f"></i></a></li>
+              <li><a class="twitter" href="https://twitter.com/Dylate_NET"><i class="fab fa-twitter"></i></a></li>
+              <li><a class="instagram" href="https://www.instagram.com/dylate_software/"><i
+                    class="fab fa-instagram"></i></a></li>
+              <li><a class="linkedin" href="https://www.linkedin.com/company/dylate/"><i
+                    class="fab fa-linkedin-in"></i></a></li>
+              <li><a class="google" href="https://g.page/dylate"><i
+                class="fab fa-google"></i></a></li>
+            </ul>
+          </div> <!-- col -->
+
+          <div class="col-6 col-md-4 col-lg-2 sm-m-15px-tb">
+            <h4 class="font-alt">Resources</h4>
+            <ul class="fot-link">
+              <li><a href="https://docs.oracle.com/javase/tutorial/java/index.html">Learn Java</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn">Learn Web Development</a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Category:Business_software">Software Categories</a></li>
+            </ul>
+          </div> <!-- col -->
+
+          <div class="col-6 col-md-4 col-lg-2 sm-m-15px-tb">
+            <h4 class="font-alt">Company</h4>
+            <ul class="fot-link">
+              <li><a href="/about.html">About</a></li>
+              <li><a href="/our-work.html">Our Work</a></li>
+              <li><a href="/get-started.html">Start a Project</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+              <li><a href="/documents/privacy.html">Privacy Policy</a></li>
+              <li><a href="/documents/terms.html">Terms of Use</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 col-lg-4 sm-m-15px-tb">
+            <h4 class="font-alt">Subscribe</h4>
+            <p>Sign up to receive important updates about our company.</p>
+            <form action="https://cdn.forms-content.sg-form.com/3a18bcc9-239a-11eb-9957-163e02c21a0c" method="GET">
+              <div class="subscribe-box m-20px-t">
+                <input placeholder="Enter Email Address" class="form-control" type="text" name="email">
+                <button class="btn btn-theme"><i class="ti-arrow-right"></i></button>
+              </div>
+            </form>
+          </div> <!-- col -->
+
+        </div>
+
+        <div class="footer-copy">
+          <div class="row">
+            <div class="col-12">
+              <p>All © Copyright by Dylate, LLC. All Rights Reserved.</p>
+            </div><!-- col -->
+          </div> <!-- row -->
+        </div> <!-- footer-copy -->
+
+      </div> <!-- container -->
+    </section>
+  </footer>
+  <!-- / -->
+  
+
+  <!-- Jquery -->
+  <script src="static/js/jquery-3.2.1.min.js"></script>
+  <script src="static/js/jquery-migrate-3.0.0.min.js"></script>
+  <!-- End -->
+
+  <!-- Plugin JS -->
+  <script src="static/plugin/appear/jquery.appear.js"></script><!--appear-->
+  <script src="static/plugin/bootstrap/js/popper.min.js"></script><!--popper-->
+  <script src="static/plugin/bootstrap/js/bootstrap.js"></script><!--bootstrap-->
+  <!-- End -->
+
+  <!-- EmailJS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+
+  <!-- Custom -->
+  <script src="static/js/jquery.parallax-scroll.js"></script>
+  <script src="static/js/custom.js"></script>
+  <!-- End -->
+
+</body>
+<!-- ========== End of Body ========== -->
+</html>

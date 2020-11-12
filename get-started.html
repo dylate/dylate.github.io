@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Axoma">
+    <meta name="keywords" content="Axoma">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!--
+  ========================================================================
+  EXCLUSIVE ON themeforest.net
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  Template Name   : Axoma
+  Author          : PXdraft
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  Copyright (c) 2018 - Axoma
+  ========================================================================
+  -->
+    <title>Dylate &raquo; Start a Project</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Plugin CSS -->
+    <link href="static/plugin/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/plugin/font-awesome/css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="static/plugin/et-line/style.css" rel="stylesheet">
+    <link href="static/plugin/themify-icons/themify-icons.css" rel="stylesheet">
+    <link href="static/plugin/owl-carousel/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="static/plugin/magnific/magnific-popup.css" rel="stylesheet">
+    <!-- End -->
+
+
+    <!-- Theme css -->
+    <link href="static/css/style.css" rel="stylesheet">
+    <link href="static/css/color/default.css" rel="stylesheet" id="color_theme">
+    <!-- End -->
+
+    <style>
+        .modal-header {
+            background-color: rgba(0, 0, 0, .03);
+            border-bottom: 1px solid rgba(0, 0, 0, .125);
+        }
+
+        #getStartedForm {
+            position: relative;
+        }
+
+        #getStartedForm .loader {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.75);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        .lds-ripple {
+            display: inline-block;
+            position: relative;
+            width: 80px;
+            height: 80px;
+        }
+
+        .lds-ripple div {
+            position: absolute;
+            border: 4px solid #0575E6;
+            opacity: 1;
+            border-radius: 50%;
+            animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+        }
+
+        .lds-ripple div:nth-child(2) {
+            animation-delay: -0.5s;
+        }
+
+        @keyframes lds-ripple {
+            0% {
+                top: 36px;
+                left: 36px;
+                width: 0;
+                height: 0;
+                opacity: 1;
+            }
+
+            100% {
+                top: 0px;
+                left: 0px;
+                width: 72px;
+                height: 72px;
+                opacity: 0;
+            }
+        }
+    </style>
+
+</head>
+
+<!-- ========== Body Starts ========== -->
+<!-- Body Start -->
+
+<body data-spy="scroll" data-target="#navbar" data-offset="98">
+
+    <!-- Loading -->
+    <div id="loading">
+        <div class="load-circle"><span class="one"></span></div>
+    </div>
+    <!-- / -->
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar header-nav navbar-expand-lg">
+            <div class="container-fluid">
+                <!-- Brand -->
+                <a class="navbar-brand" href="#">
+                    <img class="light-logo" src="static/img/logos/logo-light.svg" title="" alt="" height="30px">
+                    <img class="dark-logo" src="static/img/logos/logo.svg" title="" alt="" height="30px">
+                </a>
+                <!-- / -->
+
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+                    aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <!-- / -->
+
+                <!-- Top Menu -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbar">
+                    <ul class="navbar-nav ml-auto align-items-center">
+                        <li><a class="nav-link" href="/">Home</a></li>
+
+                        <li><a class="nav-link" href="about.html">About</a></li>
+                        <li><a class="nav-link" href="our-work.html">Our Work</a></li>
+                        <li><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li><a class="nav-link-btn btn btn-white m-25px-l md-m-0px-l" href="get-started.html">Start</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- / -->
+
+            </div><!-- Container -->
+        </nav> <!-- Navbar -->
+    </header>
+    <!-- Header End -->
+
+    <!-- Main -->
+    <main>
+
+
+        <!-- 
+        =============================
+        Page Title Section
+        =============================
+        -->
+
+        <section class="page-title-section theme-after" style="background-image:url(static/img/get-started-bg.jpg);">
+            <div class="container">
+                <div class="page-title">
+                    <h1 class="font-alt">Start a Project</h1>
+                    <ol class="breadcrumb justify-content-center">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active">Get Started</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- 
+        =============================
+        Form Section
+        =============================
+        -->
+
+        <section class="section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-8 offset-md-2 p-5">
+                        <div class="progress">
+                            <div id="progressBar" class="progress-bar" role="progressbar" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 offset-md-2 contact-form">
+                        <form id="getStartedForm" novalidate>
+                            <div class="step">
+                                <div class="question mb-4">
+                                    <h4>1/8</h4>
+                                    <h3 class="font-alt dark-color">What type of software project would you like to
+                                        start?</h3>
+                                </div>
+                                <div class="field">
+                                    <ul class="list-group">
+                                        <li class="card mb-3">
+                                            <div class="card-body d-flex justify-content-between align-items-center">
+                                                <label class="m-0" for="projectTypeWeb">1. Web Application</label>
+                                                <input type="radio" name="project[type]" id="projectTypeWeb"
+                                                    value="web">
+                                            </div>
+                                        </li>
+                                        <li class="card mb-3">
+                                            <div class="card-body d-flex justify-content-between align-items-center">
+                                                <label class="m-0" for="projectTypeMobile">2. Mobile Application</label>
+                                                <input type="radio" name="project[type]" id="projectTypeMobile"
+                                                    value="mobile">
+                                            </div>
+                                        </li>
+                                        <li class="card mb-3">
+                                            <div class="card-body d-flex justify-content-between align-items-center">
+                                                <label class="m-0" for="projectTypeDesktop">3. Desktop
+                                                    Application</label>
+                                                <input type="radio" name="project[type]" id="projectTypeDesktop"
+                                                    value="desktop">
+                                            </div>
+                                        </li>
+                                        <li class="card mb-3">
+                                            <div class="card-body d-flex justify-content-between align-items-center">
+                                                <label class="m-0" for="projectTypeAlgorithm">4. Algorithm</label>
+                                                <input type="radio" name="project[type]" id="projectTypeAlgorithm"
+                                                    value="algorithm">
+                                            </div>
+                                        </li>
+                                        <li class="card mb-3">
+                                            <div class="card-body d-flex justify-content-between align-items-center">
+                                                <label class="m-0" for="projectTypeOther">5. Other</label>
+                                                <input type="radio" name="project[type]" id="projectTypeOther"
+                                                    value="other">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="invalid-feedback" id="projectTypeInvalidFeedback">
+                                        You must select an option for project type.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="question mb-4">
+                                    <h4>2/8</h4>
+                                    <h3 class="font-alt dark-color">
+                                        What is your full name?
+                                    </h3>
+                                </div>
+                                <div class="field">
+                                    <div class="form-group my-3">
+                                        <label for="firstName">First Name:</label>
+                                        <input type="text" name="firstName" id="firstName" class="form-control">
+                                        <div class="invalid-feedback" id="firstNameInvalidFeedback">
+                                            You must provide your first name
+                                        </div>
+                                    </div>
+                                    <div class="form-group my-3">
+                                        <label for="lastName">Last Name:</label>
+                                        <input type="text" name="lastName" id="lastName" class="form-control">
+                                        <div class="invalid-feedback" id="lastNameInvalidFeedback">
+                                            You must provide your last name
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="question mb-4">
+                                    <h4>3/8</h4>
+                                    <h3 class="font-alt dark-color">
+                                        What is your best email address?
+                                    </h3>
+                                </div>
+                                <div class="field">
+                                    <div class="form-group mb-3">
+                                        <label for="email">Email Address:</label>
+                                        <input type="email" name="email" id="email" class="form-control">
+                                        <div class="invalid-feedback" id="emailInvalidFeedback">
+                                            You must provide a valid email address
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="question mb-4">
+                                    <h4>4/8</h4>
+                                    <h3 class="font-alt dark-color">
+                                        What is your best phone number?
+                                    </h3>
+                                </div>
+                                <div class="field">
+                                    <div class="form-group mb-3">
+                                        <label for="phone">Phone Number:</label>
+                                        <input type="tel" name="phone" id="phone" class="form-control">
+                                        <div class="invalid-feedback" id="phoneInvalidFeedback">
+                                            You must provide a valid phone number
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="question mb-4">
+                                    <h4>5/8</h4>
+                                    <h3 class="font-alt dark-color">
+                                        Does your company have a website?
+                                    </h3>
+                                </div>
+                                <div class="field">
+                                    <div class="form-group mb-3">
+                                        <select id="companyHasWebsite" class="form-control">
+                                            <option>No</option>
+                                            <option>Yes</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group mb-3" id="companyWebsiteFieldContainer"
+                                        style="display:none;">
+                                        <label for="companyWebsite">Company Website:</label>
+                                        <input type="url" name="company[website]" id="companyWebsite"
+                                            class="form-control">
+                                        <div class="invalid-feedback" id="companyWebsiteInvalidFeedback">
+                                            You must enter a valid website address
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="question mb-4">
+                                    <h4>6/8</h4>
+                                    <h3 class="font-alt dark-color">
+                                        What is the name of your company?
+                                    </h3>
+                                </div>
+                                <div class="field">
+                                    <div class="form-group mb-3">
+                                        <label for="companyName">Company Name:</label>
+                                        <input type="text" name="company[name]" id="companyName" class="form-control">
+                                        <div class="invalid-feedback" id="companyNameInvalidFeedback">
+                                            You must enter your company's name
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="question mb-4">
+                                    <h4>7/8</h4>
+                                    <h3 class="font-alt dark-color">
+                                        What does your company do?
+                                    </h3>
+                                </div>
+                                <div class="field">
+                                    <div class="form-group mb-3">
+                                        <label for="companyDescription">Company Description:</label>
+                                        <textarea name="company[description]" id="companyDescription"
+                                            class="form-control"></textarea>
+                                        <div class="invalid-feedback" id="companyDescriptionInvalidFeedback">
+                                            You must give a description of your company.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="question mb-4">
+                                    <h4>8/8</h4>
+                                    <h3 class="font-alt dark-color">
+                                        What do you want this software to do?
+                                    </h3>
+                                </div>
+                                <div class="field">
+                                    <div class="form-group mb-4">
+                                        <textarea name="project[description]" id="projectDescription"
+                                            class="form-control"></textarea>
+                                        <div class="invalid-feedback" id="projectDescriptionInvalidFeedback">
+                                            You must give a description of this project
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="navigation mt-3 d-flex justify-content-end">
+                                <button class="btn btn-outline-primary mr-3" id="prevBtn">&larr; Go back</button>
+                                <button class="btn btn-primary" id="nextBtn">Next &rarr;</button>
+                            </div>
+                            <div class="loader">
+                                <div class="lds-ripple">
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content bg-success text-white">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="successModalLabel">Success!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-white"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="errorModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content bg-success text-white">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="errorModalLabel">Uh Oh!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-white"></div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <!-- / -->
+
+    <!-- Footer -->
+    <footer class="footer footer-dark">
+        <section class="footer-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-4 sm-m-15px-tb md-m-30px-b">
+                        <h4 class="font-alt">About Us</h4>
+                        <p class="footer-text">We create custom software programs such as mobile and web platforms for
+                            businesses
+                            and individuals with great ideas.</p>
+                        <ul class="social-icons">
+                            <li><a class="facebook" href="https://www.facebook.com/dylatesoftware"><i
+                                        class="fab fa-facebook-f"></i></a></li>
+                            <li><a class="twitter" href="https://twitter.com/Dylate_NET"><i
+                                        class="fab fa-twitter"></i></a></li>
+                            <li><a class="instagram" href="https://www.instagram.com/dylate_software/"><i
+                                        class="fab fa-instagram"></i></a></li>
+                            <li><a class="linkedin" href="https://www.linkedin.com/company/dylate/"><i
+                                        class="fab fa-linkedin-in"></i></a></li>
+                            <li><a class="google" href="https://g.page/dylate"><i class="fab fa-google"></i></a></li>
+                        </ul>
+                    </div> <!-- col -->
+
+                    <div class="col-6 col-md-4 col-lg-2 sm-m-15px-tb">
+                        <h4 class="font-alt">Resources</h4>
+                        <ul class="fot-link">
+                            <li><a href="https://docs.oracle.com/javase/tutorial/java/index.html">Learn Java</a></li>
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Learn">Learn Web Development</a></li>
+                            <li><a href="https://en.wikipedia.org/wiki/Category:Business_software">Software
+                                    Categories</a></li>
+                        </ul>
+                    </div> <!-- col -->
+
+                    <div class="col-6 col-md-4 col-lg-2 sm-m-15px-tb">
+                        <h4 class="font-alt">Company</h4>
+                        <ul class="fot-link">
+                            <li><a href="/about.html">About</a></li>
+                            <li><a href="/our-work.html">Our Work</a></li>
+                            <li><a href="/get-started.html">Start a Project</a></li>
+                            <li><a href="/contact.html">Contact</a></li>
+                            <li><a href="/documents/privacy.html">Privacy Policy</a></li>
+                            <li><a href="/documents/terms.html">Terms of Use</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4 col-lg-4 sm-m-15px-tb">
+                        <h4 class="font-alt">Subscribe</h4>
+                        <p>Sign up to receive important updates about our company.</p>
+                        <form action="https://cdn.forms-content.sg-form.com/3a18bcc9-239a-11eb-9957-163e02c21a0c"
+                            method="GET">
+                            <div class="subscribe-box m-20px-t">
+                                <input placeholder="Enter Email Address" class="form-control" type="text" name="email">
+                                <button class="btn btn-theme"><i class="ti-arrow-right"></i></button>
+                            </div>
+                        </form>
+                    </div> <!-- col -->
+
+                </div>
+
+                <div class="footer-copy">
+                    <div class="row">
+                        <div class="col-12">
+                            <p>All © Copyright by Dylate, LLC. All Rights Reserved.</p>
+                        </div><!-- col -->
+                    </div> <!-- row -->
+                </div> <!-- footer-copy -->
+
+            </div> <!-- container -->
+        </section>
+    </footer>
+    <!-- / -->
+
+
+    <!-- Jquery -->
+    <script src="static/js/jquery-3.2.1.min.js"></script>
+    <script src="static/js/jquery-migrate-3.0.0.min.js"></script>
+    <!-- End -->
+
+    <!-- Plugin JS -->
+    <script src="static/plugin/appear/jquery.appear.js"></script>
+    <!--appear-->
+    <script src="static/plugin/bootstrap/js/popper.min.js"></script>
+    <!--popper-->
+    <script src="static/plugin/bootstrap/js/bootstrap.js"></script>
+    <!--bootstrap-->
+    <!-- End -->
+
+    <!-- Custom -->
+
+    <script src="static/js/jquery.parallax-scroll.js"></script>
+    <script src="static/js/custom.js"></script>
+    <!-- End -->
+
+    <script src="static/js/get-started-form/main.js"></script>
+    <script src="static/js/get-started-form/type-query.js"></script>
+
+</body>
+<!-- ========== End of Body ========== -->
+
+</html>
