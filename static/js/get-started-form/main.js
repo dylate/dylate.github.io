@@ -54,9 +54,13 @@ class GetStartedForm {
                 description: formData.get("project[description]")
             }
         };
-        console.log(jsonData);
-        this.showSuccessMessage('Your project was successfully submitted, we will be reaching out to you soon!');
-        this.loader.hide();
+        Dylate.createLead(jsonData)
+            .then(() => {
+                this.showSuccessMessage('Your project was successfully submitted, we will be reaching out to you soon!');
+            }).catch((error) => {
+                console.log(error);
+                this.showErrorMessage('We had an error submitting your project. Please email us at info@dylate.net.');
+            }).finally(() => this.loader.hide());
     }
 
     showNextStep() {
