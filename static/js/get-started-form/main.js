@@ -55,12 +55,27 @@ class GetStartedForm {
             }
         };
         Dylate.createLead(jsonData)
-            .then(() => {
-                this.showSuccessMessage('Your project was successfully submitted, we will be reaching out to you soon!');
+            .then((res) => {
+                if (res.success) {
+                    this.showSuccessMessage('Your project was successfully submitted, we will be reaching out to you soon!');
+                } else {
+                    this.showErrorMessage('Your project could not be submitted, see the following errors: ' + this.errorsToHtml(res.errors));
+                }
             }).catch((error) => {
                 console.log(error);
                 this.showErrorMessage('We had an error submitting your project. Please email us at info@dylate.net.');
             }).finally(() => this.loader.hide());
+    }
+
+    errorsToHtml(errors) {
+        const numOfErrors = errors.length;
+        let htmlList = "<ul>";
+        for (let i = 0; i < numOfErrors; i++) {
+            const error = errors[i];
+            const errorMessage = error.msg + " for the " + error.param + " field.";
+            htmlList =+ "<li>" + errorMessage + "</li>";
+        }
+        let htmlList =+ "</ul>";
     }
 
     showNextStep() {
