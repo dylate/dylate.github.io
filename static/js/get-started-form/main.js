@@ -76,6 +76,7 @@ class GetStartedForm {
             htmlList =+ "<li>" + errorMessage + "</li>";
         }
         htmlList =+ "</ul>";
+        return htmlList;
     }
 
     showNextStep() {
