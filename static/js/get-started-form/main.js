@@ -73,9 +73,9 @@ class GetStartedForm {
         for (let i = 0; i < numOfErrors; i++) {
             const error = errors[i];
             const errorMessage = error.msg + " for the " + error.param + " field.";
-            htmlList =+ "<li>" + errorMessage + "</li>";
+            htmlList = htmlList + "<li>" + errorMessage + "</li>";
         }
-        htmlList =+ "</ul>";
+        htmlList = htmlList + "</ul>";
         return htmlList;
     }
 
