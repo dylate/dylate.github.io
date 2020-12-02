@@ -75,7 +75,7 @@ class GetStartedForm {
             const errorMessage = error.msg + " for the " + error.param + " field.";
             htmlList =+ "<li>" + errorMessage + "</li>";
         }
-        let htmlList =+ "</ul>";
+        htmlList =+ "</ul>";
     }
 
     showNextStep() {
