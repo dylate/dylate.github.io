@@ -121,12 +121,12 @@ class GetStartedForm {
     }
 
     showSuccessMessage(message) {
-        $('#successModal .modal-body').text(message);
+        $('#successModal .modal-body').html(message);
         $('#successModal').modal('show');
     }
 
     showErrorMessage(message) {
-        $('#errorModal .modal-body').text(message);
+        $('#errorModal .modal-body').html(message);
         $('#errorModal').modal('show');
     }
 }
